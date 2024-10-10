@@ -1,0 +1,139 @@
+configuration {
+    modi: "drun,run,window";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "wezterm";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    sidebar-mode: false;
+
+    // Display symbols instead of text for tabs
+    display-drun: " ";
+    display-run: " ";
+    display-window: " ";
+}
+
+* {
+    // Set your preferred font
+    font: "JetBrainsMono Nerd Font Mono 11";
+
+    // Gruvbox Material Dark colors
+    bg0: #282828;
+    bg1: #32302f;
+    bg2: #45403d;
+    bg3: #5a524c;
+
+    fg0: #ebdbb2;
+    fg1: #ebdbb2;
+    fg2: #ebdbb2;
+    fg3: #a89984;
+
+    accent: #a9b665;
+    urgent: #ea6962;
+
+    background-color: transparent;
+    text-color: @fg0;
+
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: rgba(40, 40, 40, 0.95);
+    border-radius: 0px;
+    border: 2px;
+    border-color: @bg3;
+    width: 900px;
+}
+
+mainbox {
+    padding: 12px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border: 2px;
+    border-color: @bg3;
+    border-radius: 8px;
+    padding: 8px 16px;
+    spacing: 8px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @fg0;
+}
+
+entry {
+    placeholder: "Search";
+    placeholder-color: @fg3;
+    text-color: @fg0;
+}
+
+message {
+    margin: 12px 0 0;
+    border-radius: 8px;
+    border-color: @bg2;
+    background-color: @bg2;
+}
+
+textbox {
+    padding: 8px 24px;
+}
+
+listview {
+    background-color: transparent;
+    border-radius: 8px;
+    spacing: 4px;
+    columns: 1;
+    lines: 8;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: false;
+    margin: 12px 0 0;
+}
+
+element {
+    padding: 8px 16px;
+    spacing: 16px;
+    border-radius: 8px;
+    background-color: @bg1;
+}
+
+element normal.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element selected.normal {
+    background-color: @bg2;
+    text-color: @fg0;
+}
+
+element-icon {
+    size: 24px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element alternate.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element alternate.active {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element alternate.urgent {
+    background-color: @bg1;
+    text-color: @urgent;
+}
