@@ -1,0 +1,128 @@
+configuration {
+    modi: "drun,run,window";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    sidebar-mode: false;
+    display-drun: " ";
+    display-run: " ";
+    display-window: " ";
+}
+
+* {
+    font: "JetBrainsMono Nerd Font Mono 11";
+    bg0: #181818;
+    bg1: #282828;
+    bg2: #3e3b3c;
+    bg3: #484848;
+    fg0: #e4e4ef;
+
+    accent: #95a99f;
+    urgent: #96a6c8;
+    background-color: transparent;
+    text-color: @fg0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: rgba(40, 40, 40, 0.95);
+    border-radius: 0px;
+    border: 2px;
+    border-color: @bg3;
+    width: 900px;
+}
+
+mainbox {
+    padding: 12px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border: 2px;
+    border-color: @bg3;
+    border-radius: 8px;
+    padding: 8px 16px;
+    spacing: 8px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @fg0;
+}
+
+entry {
+    placeholder: "Search";
+    placeholder-color: @fg0;
+    text-color: @fg0;
+}
+
+message {
+    margin: 12px 0 0;
+    border-radius: 8px;
+    border-color: @bg2;
+    background-color: @bg2;
+}
+
+textbox {
+    padding: 8px 24px;
+}
+
+listview {
+    background-color: transparent;
+    border-radius: 8px;
+    spacing: 4px;
+    columns: 1;
+    lines: 8;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: false;
+    margin: 12px 0 0;
+}
+
+element {
+    padding: 8px 16px;
+    spacing: 16px;
+    border-radius: 8px;
+    background-color: @bg1;
+}
+
+element normal.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element selected.normal {
+    background-color: @bg2;
+    text-color: @fg0;
+}
+
+element-icon {
+    size: 24px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element alternate.normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element alternate.active {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element alternate.urgent {
+    background-color: @bg1;
+    text-color: @urgent;
+}
