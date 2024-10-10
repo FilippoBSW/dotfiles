@@ -1,0 +1,37 @@
+[delta "gruvbox-material-dark"]
+	blame-palette = "#282828 #32302f #1d2021 #3c3836 #504945"
+	commit-decoration-style = "#665c54" bold box ul
+	dark = true
+	file-decoration-style = "#665c54"
+	file-style = "#d4be98"
+	hunk-header-decoration-style = "#665c54" box ul
+	hunk-header-file-style = bold
+	hunk-header-line-number-style = bold "#928374"
+	hunk-header-style = file line-number syntax
+	line-numbers-left-style = "#665c54"
+	line-numbers-minus-style = bold "#ea6962"
+	line-numbers-plus-style = bold "#a9b665"
+	line-numbers-right-style = "#665c54"
+	line-numbers-zero-style = "#665c54"
+	minus-emph-style = bold syntax "#64343d"
+	minus-style = syntax "#442e2f"
+	plus-emph-style = bold syntax "#424937"
+	plus-style = syntax "#32362c"
+	map-styles = \
+		bold purple => syntax "#4b4059", \
+		bold blue => syntax "#3a4655", \
+		bold cyan => syntax "#3a5152", \
+		bold yellow => syntax "#584d39"
+	syntax-theme = gruvbox-material-dark
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
+    features = gruvbox-material-dark
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
