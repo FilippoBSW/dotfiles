@@ -1,0 +1,16 @@
+map e scrollDown
+map i scrollUp
+
+map n goBack
+map o goForward
+
+map N previousTab
+map O nextTab
+
+map s enterInsertMode
+
+map t performFind
+map T performBackwardsFind
+
+map p Vomnibar.activate
+map P Vomnibar.activateInNewTab

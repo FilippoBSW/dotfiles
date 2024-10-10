@@ -1,0 +1,77 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', 'Font Awesome 6 Free';
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #282828;
+    color: #e6d0aa;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    background: transparent;
+    margin: 4px 0 4px 4px;
+    padding: 0 8px;
+}
+
+#workspaces button {
+    background: #37413f;
+    color: #e6d0aa;
+    min-width: 30px;
+    padding: 0 4px;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-size: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces button.active {
+    color: #e6d0aa;
+    background: #425350;
+    font-size: 10px;
+    padding: 0 12px;
+}
+
+#workspaces button:hover {
+    color: #e6d0aa;
+    background: #425350;
+}
+
+#pulseaudio {
+    color: #73a499;
+    background: #282828;
+    padding: 0 12px 0 0;
+}
+
+#idle_inhibitor {
+    color: #73a499;
+    background: #282828;
+    padding: 0 12px 0 0;
+}
+
+#power-profiles-daemon {
+    color: #73a499;
+    background: #282828;
+    padding: 0 12px 0 0;
+}
+
+#battery {
+    color: #73a499;
+    background: #282828;
+    padding: 0 12px 0 0;
+}
+
+#tray {
+    background: #282828;
+    padding: 0 12px 0 0;
+}
