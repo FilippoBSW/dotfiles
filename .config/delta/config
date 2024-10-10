@@ -1,0 +1,50 @@
+[delta "gruvbox"]
+    dark = true
+    syntax-theme = gruvbox-dark
+    file-style = "#d4be98" bold
+    file-added-label = [+]
+    file-copied-label = [==]
+    file-modified-label = [*]
+    file-removed-label = [-]
+    file-renamed-label = [->]
+    file-decoration-style = "#928374" ul
+    hunk-header-style = omit
+    line-numbers = true
+    line-numbers-left-style = "#928374"
+    line-numbers-right-style = "#928374"
+    line-numbers-minus-style = "#ea6962"
+    line-numbers-plus-style = "#a9b665"
+    line-numbers-zero-style = "#928374"
+    line-numbers-left-format = " {nm:>3} │"
+    line-numbers-right-format = " {np:>3} │"
+    inline-hint-style = syntax
+    minus-style = syntax "#402120"
+    minus-emph-style = syntax "#4c3432"
+    minus-non-emph-style = syntax auto
+    plus-style = syntax "#34381b"
+    plus-emph-style = syntax "#3b4439"
+    plus-non-emph-style = syntax auto
+    whitespace-error-style = "#4c3432" reverse
+    commit-decoration-style = normal box
+    commit-style = "#d4be98" bold
+    blame-code-style = syntax
+    blame-format = "{author:>18} ({commit:>8}) {timestamp:<13} "
+    blame-palette = "#1d2021" "#1d2021" "#282828" "#3c3836"
+    merge-conflict-begin-symbol = ⌃
+    merge-conflict-end-symbol = ⌄
+    merge-conflict-ours-diff-header-style = "#d8a657" bold
+    merge-conflict-theirs-diff-header-style = "#d8a657" bold overline
+    merge-conflict-ours-diff-header-decoration-style = ''
+    merge-conflict-theirs-diff-header-decoration-style = ''
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
+    features = gruvbox
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
