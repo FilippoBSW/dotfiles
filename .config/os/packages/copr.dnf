@@ -1,0 +1,2 @@
+sudo dnf copr enable elxreno/jetbrains-mono-fonts
+sudo dnf copr enable petersen/haskell-language-server
