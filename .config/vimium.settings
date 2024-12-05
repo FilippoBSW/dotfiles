@@ -1,16 +1,19 @@
-map e scrollDown
-map i scrollUp
+map h goBack
+map a scrollDown
+map e scrollUp
+map i goForward
+map H previousTab
+map I nextTab
 
-map n goBack
-map o goForward
+map f scrollPageDown
+map o scrollPageUp
+map u reload
 
-map N previousTab
-map O nextTab
+map c Vomnibar.activate
+map C Vomnibar.activateInNewTab
 
-map s enterInsertMode
-
-map t performFind
-map T performBackwardsFind
-
-map p Vomnibar.activate
-map P Vomnibar.activateInNewTab
+map r LinkHints.activateMode
+map R LinkHints.activateModeToOpenInNewTab
+map t enterInsertMode
+map s performFind
+map S performBackwardsFind
