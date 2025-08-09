@@ -16,7 +16,7 @@
     minus-style = normal "#dc6363" "#181818"
     minus-emph-style = bold "#dc6363" "#493030"
     plus-style = normal "#92b578" "#181818"
-    plus-emph-style = bold "#92b578" "#304038"
+    plus-emph-style = bold "#92b578" "#2d3a2f"
     whitespace-error-style = "#dc6363" reverse
     syntax-theme = gruber-material-dark
 [core]

@@ -14,7 +14,7 @@
     (gruber-material-dark-bg4       . "#52494e")
     (gruber-material-dark-bg-red    . "#493030")
     (gruber-material-dark-red       . "#dc6363")
-    (gruber-material-dark-bg-green  . "#304038")
+    (gruber-material-dark-bg-green  . "#2d3a2f")
     (gruber-material-dark-green     . "#92b578")
     (gruber-material-dark-bg-yellow . "#463e2a")
     (gruber-material-dark-yellow    . "#e8bf66")
